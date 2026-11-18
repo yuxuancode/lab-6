@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavePoint Archive | Recommend a Game</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SavePoint Archive</a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="drawer-header">
+            <span class="drawer-title fw-bold" id="navbarNavLabel">Menu</span>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tier List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <h1 class="mb-2">Recommend a Game</h1>
+    <p class="mb-4">Have a favorite indie gem, RPG, or co-op title I should add to my backlog? Send your recommendation below.</p>
+
+    <form action="#" method="post">
+      <div class="row g-4">
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="senderFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="senderFirstName" name="senderFirstName" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="senderLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="senderLastName" name="senderLastName" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="senderEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="senderEmail" name="senderEmail" placeholder="player.one@example.com" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="favoriteGenre" class="form-label">Game Genre</label>
+            <select class="form-control" id="favoriteGenre" name="favoriteGenre" required>
+              <option value="" selected disabled>Choose a genre...</option>
+              <option value="rpg">Action / Turn-Based RPG</option>
+              <option value="survival">Survival &amp; Sandbox</option>
+              <option value="indie">Indie Platformer / Puzzle</option>
+              <option value="sim">City Builder &amp; Strategy</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="gamePitch" class="form-label">Game Title &amp; Why You Recommend It</label>
+            <textarea class="form-control" id="gamePitch" name="gamePitch" rows="3" required></textarea>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field md:mt-5">
+            <input type="checkbox" class="check" id="replyConsent" name="replyConsent" required>
+            <label for="replyConsent">I agree to receive a follow-up message about my game recommendation.</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <button type="submit" class="btn-solid theme-primary">Send Recommendation</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="container-fluid mt-5">
+    <p class="p-3 bg-1 border d-flex justify-content-center mb-0">
+      SavePoint Archive &mdash; Personal Video Game Showcase
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavePoint Archive | Favorite Games Showcase</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SavePoint Archive</a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="drawer-header">
+            <span class="drawer-title fw-bold" id="navbarNavLabel">Menu</span>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tier List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container mt-4">
+      <h1>My All-TIME FAVORITE VIDEO GAMES</h1>
+      <div id="favGamesCarousel" class="carousel carousel-overlay slide">
+        <div class="carousel-inner rounded-5">
+          <div class="carousel-item active">
+            <img src="images/banner1.jpg" class="d-block w-100" alt="Frostpunk Cover Art">
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner2.jpg" class="d-block w-100" alt="Assassin Creed Cover Art">
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner3.jpg" class="d-block w-100" alt="Path of Exile 2 Cover Art">
+          </div>
+        </div>
+        <div class="carousel-overlay-controls">
+          <div>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#favGamesCarousel" data-bs-slide="prev">
+              <span class="carousel-icon-prev" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#favGamesCarousel" data-bs-slide="next">
+              <span class="carousel-icon-next" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#favGamesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#favGamesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#favGamesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-5">
+      <h2 class="mb-4">MORE TOP PICKS IN MY LIBRARY</h2>
+
+      <div class="row g-4">
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/w1.jpg" class="card-img-top" alt="A world full of zombies, a story of how you die">
+            <div class="card-body">
+              <h3 class="card-title">Project Zomboid</h3>
+              <p class="card-text">An unforgiving isometric survival sandbox focused on base building, scavenging, and long-term planning.</p>
+
+              <div class="accordion mb-3">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Game Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">
+                    <p class="card-text">Genre: Survival Sandbox &bull; Platform: PC &bull; Best Feature: Deep sandbox settings and Lua modding support.</p>
+                  </div>
+                </details>
+              </div>
+
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#gameDialog1">
+                Why I Love It
+              </button>
+
+              <dialog class="dialog" id="gameDialog1" aria-labelledby="dialogTitle1">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="dialogTitle1">Project Zomboid</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                </div>
+                <div class="dialog-body">
+                  <p>Every run tells an emergent story - from fortifying a quiet farmhouse before the power grid shuts off to customizing survival rules with friends.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/w2.jpg" class="card-img-top" alt="Hunter wielding a greatsword facing a winged wyvern in a misty valley">
+            <div class="card-body">
+              <h3 class="card-title">Monster Hunter: Wild</h3>
+              <p class="card-text">Tactical action RPG where preparation, weapon mastery, and reading monster tells decide every hunt.</p>
+
+              <div class="accordion mb-3">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Game Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">
+                    <p class="card-text">Genre: Action RPG &bull; Platform: PC / Console &bull; Best Feature: 14 distinct weapon classes with weighty combat.</p>
+                  </div>
+                </details>
+              </div>
+
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#gameDialog2">
+                Why I Love It
+              </button>
+
+              <dialog class="dialog" id="gameDialog2" aria-labelledby="dialogTitle2">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="dialogTitle2">Monster Hunter: Wild</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                </div>
+                <div class="dialog-body">
+                  <p>There is no character leveling - progress comes purely from crafting gear and learning each monster's attack patterns.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/w3.jpg" class="card-img-top" alt="Cosmic express train traveling through galaxy">
+            <div class="card-body">
+              <h3 class="card-title">Honkai: Star Rail</h3>
+              <p class="card-text">Turn-based space fantasy RPG blending snappy elemental break mechanics with memorable world-building.</p>
+
+              <div class="accordion mb-3">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Game Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">
+                    <p class="card-text">Genre: Turn-Based RPG &bull; Platform: PC / Mobile / PS5 &bull; Best Feature: Strategic team synergy and roguelike Simulated Universe.</p>
+                  </div>
+                </details>
+              </div>
+
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#gameDialog3">
+                Why I Love It
+              </button>
+
+              <dialog class="dialog" id="gameDialog3" aria-labelledby="dialogTitle3">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="dialogTitle3">Honkai: Star Rail</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                </div>
+                <div class="dialog-body">
+                  <p>Great soundtrack, crisp turn-order strategy, and self-contained planetary arcs that are easy to enjoy in short daily sessions.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/w4.jpg" class="card-img-top" alt="Lone traveler standing before a glowing golden tree in a dark fantasy realm">
+            <div class="card-body">
+              <h3 class="card-title">Elden Ring</h3>
+              <p class="card-text">A vast interconnected dark-fantasy world that rewards curiosity, environmental clues, and patient boss fights.</p>
+
+              <div class="accordion mb-3">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Game Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">
+                    <p class="card-text">Genre: Open-World Action RPG &bull; Platform: PC / Console &bull; Best Feature: No map markers—landmarks guide exploration naturally.</p>
+                  </div>
+                </details>
+              </div>
+
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#gameDialog4">
+                Why I Love It
+              </button>
+
+              <dialog class="dialog" id="gameDialog4" aria-labelledby="dialogTitle4">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="dialogTitle4">Elden Ring</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                </div>
+                <div class="dialog-body">
+                  <p>If a boss feels impossible, you can ride off in any direction, discover an underground city, and return with completely new builds.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/w5.jpg" class="card-img-top" alt="Pixel-art mountain climber leaping across icy platforms under a starry sky">
+            <div class="card-body">
+              <h3 class="card-title">Celeste</h3>
+              <p class="card-text">Precision 2D platformer with instant respawns, tight air-dash physics, and an uplifting story.</p>
+
+              <div class="accordion mb-3">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Game Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">
+                    <p class="card-text">Genre: Precision Platformer &bull; Platform: PC / Switch / Console &bull; Best Feature: Zero-friction retries and Lena Raine's synth score.</p>
+                  </div>
+                </details>
+              </div>
+
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#gameDialog5">
+                Why I Love It
+              </button>
+
+              <dialog class="dialog" id="gameDialog5" aria-labelledby="dialogTitle5">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="dialogTitle5">Celeste</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                </div>
+                <div class="dialog-body">
+                  <p>Every screen is a self-contained movement puzzle where failing takes less than a second to reset, keeping you in pure flow state.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/w6.jpg" class="card-img-top" alt="Isometric city grid with highways, parks, and transit lines at dusk">
+            <div class="card-body">
+              <h3 class="card-title">Cities: Skylines</h3>
+              <p class="card-text">Urban planning simulator where zoning, transit networks, and traffic flow bring a growing city to life.</p>
+
+              <div class="accordion mb-3">
+                <details class="accordion-item">
+                  <summary class="accordion-header">
+                    Game Details
+                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                  </summary>
+                  <div class="accordion-body">
+                    <p class="card-text">Genre: City Builder &bull; Platform: PC / Console &bull; Best Feature: Detailed road hierarchy and public transit routing.</p>
+                  </div>
+                </details>
+              </div>
+
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#gameDialog6">
+                Why I Love It
+              </button>
+
+              <dialog class="dialog" id="gameDialog6" aria-labelledby="dialogTitle6">
+                <div class="dialog-header">
+                  <h4 class="dialog-title" id="dialogTitle6">Cities: Skylines</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                </div>
+                <div class="dialog-body">
+                  <p>Watching commuters switch from congested highways to a newly built metro line is endlessly satisfying.</p>
+                </div>
+                <div class="dialog-footer">
+                  <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                </div>
+              </dialog>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container-fluid mt-5">
+    <p class="p-3 bg-1 border d-flex justify-content-center mb-0">
+      SavePoint Archive &mdash; Personal Video Game Showcase
+    </p>
+  </footer>
+
+</body>
+</html>
